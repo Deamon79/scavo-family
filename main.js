@@ -12,7 +12,8 @@
   // Reveal-on-scroll for sections + cards
   const revealTargets = [
     '.letter-body', '.letter-aside', '.section-title', '.section-lede',
-    '.fact', '.person', '.bleed img', '.bleed-cap', '.story-body',
+    '.fact', '.profile-text', '.profile-photo', '.kids-photo', '.kids-text',
+    '.bleed img', '.bleed-cap', '.story-body',
     '.story-photo', '.stability-body', '.stability-aside',
     '.home', '.ref', '.docs', '.contact-grid', '.contact-sign',
   ];
