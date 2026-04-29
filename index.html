@@ -21,8 +21,9 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&family=Inter+Tight:ital,wght@0,300..700;1,300..600&display=swap">
 
 <link rel="preload" as="image"
-  imagesrcset="images/hero-family-800.jpg 800w, images/hero-family-1200.jpg 1200w, images/hero-family.jpg 2200w"
+  imagesrcset="images/hero-family-800.webp 800w, images/hero-family-1200.webp 1200w, images/hero-family.webp 2200w"
   imagesizes="(max-width: 800px) 100vw, 60vw"
+  type="image/webp"
   fetchpriority="high">
 
 <link rel="stylesheet" href="style.css">
@@ -50,12 +51,17 @@
   <!-- HERO -->
   <section class="hero">
     <div class="hero-art">
-      <img
-        src="images/hero-family-1200.jpg"
-        srcset="images/hero-family-800.jpg 800w, images/hero-family-1200.jpg 1200w, images/hero-family.jpg 2200w"
-        sizes="(max-width: 800px) 100vw, 60vw"
-        width="1014" height="1200"
-        alt="The Scavo family at Christmas. Karolina, Damian, Gabriel and Michael" loading="eager" fetchpriority="high" decoding="async">
+      <picture>
+        <source type="image/webp"
+          srcset="images/hero-family-800.webp 800w, images/hero-family-1200.webp 1200w, images/hero-family.webp 2200w"
+          sizes="(max-width: 800px) 100vw, 60vw">
+        <img
+          src="images/hero-family-1200.jpg"
+          srcset="images/hero-family-800.jpg 800w, images/hero-family-1200.jpg 1200w, images/hero-family.jpg 2200w"
+          sizes="(max-width: 800px) 100vw, 60vw"
+          width="1014" height="1200"
+          alt="The Scavo family at Christmas. Karolina, Damian, Gabriel and Michael" loading="eager" fetchpriority="high" decoding="async">
+      </picture>
     </div>
     <div class="hero-text">
       <div class="kicker">
@@ -121,7 +127,10 @@
       </div>
       <aside class="letter-aside">
         <figure class="aside-photo">
-          <img src="images/couple-warm.jpg" alt="Karolina and Damian Scavo" width="1800" height="1590" loading="lazy" decoding="async">
+          <picture>
+            <source type="image/webp" srcset="images/couple-warm.webp">
+            <img src="images/couple-warm.jpg" alt="Karolina and Damian Scavo" width="1800" height="1590" loading="lazy" decoding="async">
+          </picture>
           <figcaption>Karolina &amp; Damian, Florence.</figcaption>
         </figure>
       </aside>
@@ -165,7 +174,10 @@
   <section class="profile profile-karolina">
     <div class="profile-grid profile-grid-reverse">
       <figure class="profile-photo">
-        <img src="images/karolina-glacier.jpg" alt="Karolina Kaminska, Perito Moreno glacier" width="1650" height="2200" loading="lazy" decoding="async">
+        <picture>
+          <source type="image/webp" srcset="images/karolina-glacier.webp">
+          <img src="images/karolina-glacier.jpg" alt="Karolina Kaminska, Perito Moreno glacier" width="1650" height="2200" loading="lazy" decoding="async">
+        </picture>
         <figcaption>Perito Moreno glacier, Patagonia.</figcaption>
       </figure>
       <div class="profile-text">
@@ -252,7 +264,10 @@
         </a>
       </div>
       <figure class="profile-photo">
-        <img src="images/damian-plane.jpg" alt="Damian Scavo, somewhere over the Bay" width="1800" height="1350" loading="lazy" decoding="async">
+        <picture>
+          <source type="image/webp" srcset="images/damian-plane.webp">
+          <img src="images/damian-plane.jpg" alt="Damian Scavo, somewhere over the Bay" width="1800" height="1350" loading="lazy" decoding="async">
+        </picture>
         <figcaption>Somewhere over the Bay.</figcaption>
       </figure>
     </div>
@@ -263,7 +278,10 @@
     <div class="rule"><span>III.</span> The boys</div>
     <div class="kids-grid">
       <figure class="kids-photo">
-        <img src="images/kids-glacier.jpg" alt="Gabriel and Michael at Perito Moreno" width="1800" height="1350" loading="lazy" decoding="async">
+        <picture>
+          <source type="image/webp" srcset="images/kids-glacier.webp">
+          <img src="images/kids-glacier.jpg" alt="Gabriel and Michael at Perito Moreno" width="1800" height="1350" loading="lazy" decoding="async">
+        </picture>
         <figcaption>Perito Moreno. Staring at ice older than civilization.</figcaption>
       </figure>
       <div class="kids-text">
@@ -283,7 +301,10 @@
 
   <!-- WIDE PHOTO BREAK -->
   <section class="bleed">
-    <img src="images/wedding-tuscany.jpg" alt="Karolina and Damian, Tuscany 2018" width="2400" height="1599" loading="lazy" decoding="async">
+    <picture>
+      <source type="image/webp" srcset="images/wedding-tuscany.webp">
+      <img src="images/wedding-tuscany.jpg" alt="Karolina and Damian, Tuscany 2018" width="2400" height="1599" loading="lazy" decoding="async">
+    </picture>
     <div class="bleed-cap">Tuscany, the wedding day.</div>
   </section>
 
@@ -310,7 +331,10 @@
         </p>
       </div>
       <figure class="story-photo">
-        <img src="images/kids-van.jpg" alt="Gabriel and Michael in a Volkswagen camper" width="1350" height="1800" loading="lazy" decoding="async">
+        <picture>
+          <source type="image/webp" srcset="images/kids-van.webp">
+          <img src="images/kids-van.jpg" alt="Gabriel and Michael in a Volkswagen camper" width="1350" height="1800" loading="lazy" decoding="async">
+        </picture>
         <figcaption>The boys, last summer.</figcaption>
       </figure>
     </div>
@@ -478,7 +502,10 @@
 
   <!-- SECOND BLEED. Kauai -->
   <section class="bleed bleed-warm">
-    <img src="images/kauai-sunset-2.jpg" alt="The Scavo family at Hanalei Bay, Kauai" width="2400" height="1800" loading="lazy" decoding="async">
+    <picture>
+      <source type="image/webp" srcset="images/kauai-sunset-2.webp">
+      <img src="images/kauai-sunset-2.jpg" alt="The Scavo family at Hanalei Bay, Kauai" width="2400" height="1800" loading="lazy" decoding="async">
+    </picture>
     <div class="bleed-cap">Hanalei Bay, Kauai. Last summer.</div>
   </section>
 
