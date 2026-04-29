@@ -1,8 +1,8 @@
-// The Scavo Family — small enhancements only.
+// The Scavo Family. Small enhancements only.
 // Goals: reveal on scroll, year, smooth nav active state.
 
 (() => {
-  // Mark JS-enabled — gates reveal animations (graceful fallback if JS fails)
+  // Mark JS-enabled. Gates reveal animations (graceful fallback if JS fails)
   document.documentElement.classList.add('js');
 
   // Year stamp

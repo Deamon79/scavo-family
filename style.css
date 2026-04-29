@@ -1,5 +1,5 @@
 /* ============================================================
-   The Scavo Family — landing page
+   The Scavo Family. Landing page
    Editorial · warm · mobile-first
    ============================================================ */
 
@@ -1322,7 +1322,7 @@ section {
 .foot-meta { flex: 1; }
 .foot-tag { color: rgba(250,246,238,.35); font-style: italic; font-family: var(--serif); }
 
-/* -- Reveal animation (progressive — visible if no JS) ----- */
+/* -- Reveal animation (progressive, visible if no JS) ----- */
 html.js .reveal {
   opacity: 0;
   transform: translateY(28px);
